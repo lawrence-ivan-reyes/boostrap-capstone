@@ -28,19 +28,51 @@
 </nav>
       
 <div class="hero-background-img">
+    <img src="/assets/hero-image.png" alt="Books" class="img-fluid">
     <div class="hero-content text-left">
         <h1>BookNest: The Online Book Club that<br>Bridges Borders and Brings Readers<br>Together.</h1>
         <p class="lead">Your Passport to a Global Community of Book Lovers, No Matter Where You Are</p>
         <a href="#" class="btn btn-light mb-4">Join the Nest</a>
     </div>
-    <img src="/assets/hero-image.png" alt="Books" class="img-fluid">
 </div>
 
 <img src="/assets/hero-small-image.png" alt="Smaller Image" class="small-image">
 
+<section class="container mt-5 monthly-spotlight">
+    <h2 class="text-white">Monthly Spotlight</h2>
+    <div class="card text-white bg-transparent mb-3">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img src="/assets/denison-avenue.jpg" class="card-img" alt="Book of the Month" style="object-fit: cover; height: 100%; width: 100%;">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-size: 1.5rem;">Book: Denison Avenue</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Author: Christina Wong</h6>
+                    <p class="card-text">Bringing together ink artwork and fiction, Denison Avenue by Daniel Innes (illustrations) and Christina Wong (text) follows the elderly Wong Cho Sum, who, living in Toronto’s gentrifying Chinatown–Kensington Market, begins to collect bottles and cans after the sudden loss of her husband as a way to fill her days and keep grief and loneliness at bay. In her long walks around the city, Cho Sum meets new friends, confronts classism and racism, and learns how to build a life as a widow in a neighborhood that is being destroyed and rebuilt, leaving elders like her behind.</p>
+                    <p class="card-text">A poignant meditation on loss, aging, gentrification, and the barriers that Chinese Canadian seniors experience in big cities, Denison Avenue beautifully combines visual art, fiction, and the endangered Toisan dialect to create a book that is truly unforgettable.</p>
+                    <a href="https://www.goodreads.com/book/show/64995552-denison-avenue" class="btn btn-light">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <footer class="p-5 text-light">
     &copy; 2024 BookNest
 </footer>
-    
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+
+<script>
+    const myModal = document.getElementById('bookModal');
+    const myInput = document.getElementById('myInput');
+
+    myModal.addEventListener('shown.bs.modal', () => {
+    });
+</script>
+
 </body>
 </html>

@@ -26,7 +26,6 @@ body {
     color: #343a40;
 }
 
-
 .hero-background-img {
     position: relative;
     width: 100vw;
@@ -52,15 +51,19 @@ body {
     text-align: left;
     padding: 20px;
     color: white; 
+    z-index: 2; 
 }
 
 .small-image {
-    margin-top: 20px; 
-    max-width: 100%; 
+    max-width: 40%;
     height: auto; 
     display: block; 
     margin-left: auto; 
     margin-right: auto; 
+    position: absolute; 
+    top: 76%;
+    left: 20.1%; 
+    transform: translate(-50%, -50%); 
 }
 
 h1, .lead {
@@ -69,4 +72,26 @@ h1, .lead {
 
 footer {
     background-color: transparent;
+}
+
+.monthly-spotlight {
+    margin-top: 50px; 
+    margin-left: 15px;
+}
+
+.monthly-spotlight h2 {
+    text-align: left;
+    margin-bottom: 20px; 
+}
+
+.card-title {
+    font-size: 1.5rem; 
+}
+
+.card-subtitle {
+    font-size: 1.25rem; 
+}
+
+.card-text {
+    font-size: 1rem; 
 }
