@@ -95,3 +95,8 @@ footer {
 .card-text {
     font-size: 1rem; 
 }
+
+.genres-top-picks .card-header {
+    background-color: transparent !important; 
+    border: none; 
+}
