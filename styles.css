@@ -96,7 +96,52 @@ footer {
     font-size: 1rem; 
 }
 
+.genres-top-picks {
+    background-color: transparent !important; 
+}
+
+.genres-top-picks .carousel-inner {
+    height: 610px; 
+}
+
+.genres-top-picks .carousel-item img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.genres-top-picks .card {
+    height: 100%; 
+}
+
 .genres-top-picks .card-header {
     background-color: transparent !important; 
     border: none; 
 }
+
+body, .container, .row, .genres-top-picks {
+    background-color: transparent !important; 
+}
+
+.tooltip {
+    --bs-tooltip-bg: rgba(255, 255, 255, 0.8);
+    --bs-tooltip-color: #000;
+    --bs-tooltip-border-radius: 0.25rem;
+    --bs-tooltip-font-size: 0.875rem;
+    --bs-tooltip-opacity: 1;
+}
+
+.tooltip-inner {
+    background-color: var(--bs-tooltip-bg);
+    color: var(--bs-tooltip-color);
+    border-radius: var(--bs-tooltip-border-radius);
+    opacity: var(--bs-tooltip-opacity);
+}
+
+.upcoming-events {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+

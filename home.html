@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BookNest</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/darkly/bootstrap.min.css" rel="stylesheet"> 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -65,21 +66,13 @@
         <div class="col-md-4">
             <div class="card text-white bg-secondary mb-3">
                 <div class="card-header">Fiction</div>
-                <div id="fictionCarousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#fictionCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#fictionCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    </div>
+                <div id="fictionCarousel" class="carousel slide">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="/assets/fiction-1.jpg" class="d-block w-100" alt="Fiction Book 1">
-                            <div class="carousel-caption d-none d-md-block">
-                            </div>
                         </div>
                         <div class="carousel-item">
                             <img src="/assets/fiction-2.jpg" class="d-block w-100" alt="Fiction Book 2">
-                            <div class="carousel-caption d-none d-md-block">
-                            </div>
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#fictionCarousel" data-bs-slide="prev">
@@ -97,28 +90,20 @@
         <div class="col-md-4">
             <div class="card text-white bg-secondary mb-3">
                 <div class="card-header">Thriller</div>
-                <div id="thrillerCarousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#thrillerCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#thrillerCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    </div>
+                <div id="nonFictionCarousel" class="carousel slide">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="/assets/thriller-1.jpg" class="d-block w-100" alt="Thriller Book 1">
-                            <div class="carousel-caption d-none d-md-block">
-                            </div>
                         </div>
                         <div class="carousel-item">
                             <img src="/assets/thriller-2.jpg" class="d-block w-100" alt="Thriller Book 2">
-                            <div class="carousel-caption d-none d-md-block">
-                            </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#thrillerCarousel" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#nonFictionCarousel" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#thrillerCarousel" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#nonFictionCarousel" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
@@ -129,21 +114,13 @@
         <div class="col-md-4">
             <div class="card text-white bg-secondary mb-3">
                 <div class="card-header">Science Fiction</div>
-                <div id="sciFiCarousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#sciFiCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#sciFiCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    </div>
+                <div id="sciFiCarousel" class="carousel slide">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="/assets/scifi-1.jpg" class="d-block w-100" alt="Sci-Fi Book 1">
-                            <div class="carousel-caption d-none d-md-block">
-                            </div>
                         </div>
                         <div class="carousel-item">
                             <img src="/assets/scifi-2.jpg" class="d-block w-100" alt="Sci-Fi Book 2">
-                            <div class="carousel-caption d-none d-md-block">
-                            </div>
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#sciFiCarousel" data-bs-slide="prev">
@@ -154,6 +131,78 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container mt-5 testimonials-section">
+    <h2 class="text-left text-white">Testimonials & Member Reviews</h2>
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card text-white bg-secondary mb-3">
+                <div class="card-body">
+                    <p class="card-text">"Being part of this BookNest has transformed my reading experience!"</p>
+                    <p class="card-text" data-bs-toggle="tooltip" title="Favorite Genre: Science Fiction" style="white-space: nowrap;">- Harry Potter</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-white bg-secondary mb-3">
+                <div class="card-body">
+                    <p class="card-text">"I've met so many amazing people through this BookNest!"</p>
+                    <p class="card-text" data-bs-toggle="tooltip" title="Favorite Genre: Fiction" style="white-space: nowrap;">- Hermione Granger</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-white bg-secondary mb-3">
+                <div class="card-body">
+                    <p class="card-text">"The discussions we have at BookNest are enlightening and inspiring!"</p>
+                    <p class="card-text" data-bs-toggle="tooltip" title="Favorite Genre: Thriller" style="white-space: nowrap;">- Ron Weasley</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container mt-5 upcoming-events">
+    <h2 class="text-left text-white">Upcoming Events</h2>
+    <div class="accordion" id="accordionEvents">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#eventOne" aria-expanded="true" aria-controls="eventOne">
+                    Book Club Meetup - November 10, 2024
+                </button>
+            </h2>
+            <div id="eventOne" class="accordion-collapse collapse show" data-bs-parent="#accordionEvents">
+                <div class="accordion-body">
+                    Join us for our monthly book club meetup where we will discuss this month's book selection. Enjoy snacks and meet fellow book lovers!
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eventTwo" aria-expanded="false" aria-controls="eventTwo">
+                    Virtual Author Q&A - November 15, 2024
+                </button>
+            </h2>
+            <div id="eventTwo" class="accordion-collapse collapse" data-bs-parent="#accordionEvents">
+                <div class="accordion-body">
+                    Participate in a live Q&A session with our featured author this month. Get your questions ready and join us online for an engaging discussion!
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eventThree" aria-expanded="false" aria-controls="eventThree">
+                    Book Discussion: "The Midnight Library" - November 20, 2024
+                </button>
+            </h2>
+            <div id="eventThree" class="accordion-collapse collapse" data-bs-parent="#accordionEvents">
+                <div class="accordion-body">
+                    Join us for an in-depth discussion on Matt Haig's bestselling novel. Bring your thoughts and insights to share with the group!
                 </div>
             </div>
         </div>
@@ -174,6 +223,11 @@
 
     myModal.addEventListener('shown.bs.modal', () => {
     });
+</script>
+
+<script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 </script>
 
 </body>
