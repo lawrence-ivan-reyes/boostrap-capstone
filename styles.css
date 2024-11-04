@@ -519,25 +519,36 @@ footer {
     left: -8px;
 }
 
-.timeline-item .timeline-year {
+.timeline-year {
     font-weight: bold;
     font-size: 1.5rem;
     color: #FFD700;
 }
 
-.timeline-item p {
-    background: none;
-    padding: 0;
-    margin: 0;
-    font-size: 1.2rem;
-    font-weight: normal;
-    color: #ffffff;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+.accordion-button {
+    border: none; 
+    background-color: transparent; 
+    color: #FFD700; 
+    font-weight: bold;
+    text-align: left; 
 }
 
-.timeline-item.visible p {
-    opacity: 1;
-    transform: translateY(0);
+.accordion-button:not(.collapsed) {
+    color: #2c2c2c; 
 }
+
+.accordion-body {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.05); 
+    padding: 1rem 1.5rem; 
+}
+
+.accordion-body p {
+    margin: 0; 
+    font-size: 1.2rem; 
+}
+
+.accordion-collapse {
+    transition: max-height 0.3s ease; 
+}
+
