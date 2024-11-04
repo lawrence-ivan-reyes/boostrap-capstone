@@ -92,7 +92,7 @@
             <div class="card step-card">
                 <div class="card-body">
                     <h5 class="card-title">Step 1</h5>
-                    <p class="card-text">Create an account below.</p>
+                    <p class="join-card-text">Create an account below.</p>
                 </div>
             </div>
         </div>
@@ -100,7 +100,7 @@
             <div class="card step-card">
                 <div class="card-body">
                     <h5 class="card-title">Step 2</h5>
-                    <p class="card-text">Confirm your account via email.</p>
+                    <p class="join-card-text">Confirm your account via email.</p>
                 </div>
             </div>
         </div>
@@ -108,7 +108,7 @@
             <div class="card step-card">
                 <div class="card-body">
                     <h5 class="card-title">Step 3</h5>
-                    <p class="card-text">Begin your next reading journey!</p>
+                    <p class="join-card-text">Begin your next reading journey!</p>
                 </div>
             </div>
         </div>
@@ -201,15 +201,15 @@
     <h2 class="text-left text-white">Upcoming Events</h2>
     <ul class="event-list">
         <li>
-            <h5 data-bs-toggle="popover" data-bs-title="BookNest Monthly Meeting" data-bs-content="Join us for our monthly gathering where we discuss our book of the month and plan future reads.">BookNest Monthly Meeting</h5>
+            <h5 data-bs-toggle="tooltip" title="Join us for our monthly gathering where we discuss our book of the month and plan future reads.">BookNest Monthly Meeting</h5>
             <p>Date: November 15, 2024 | Time: 7:00 - 8:00 PM EST</p>
         </li>
         <li>
-            <h5 data-bs-toggle="popover" data-bs-title="Author Q&A with Blake Crouch" data-bs-content="Get your questions ready for the author of this month's selection!">Author Q&A with Blake Crouch</h5>
+            <h5 data-bs-toggle="tooltip" title="Get your questions ready for the author of this month's selection!">Author Q&A with Blake Crouch</h5>
             <p>Date: November 22, 2024 | Time: 6:00 - 7:00 PM EST</p>
         </li>
         <li>
-            <h5 data-bs-toggle="popover" data-bs-title="Monthly Book Discussion" data-bs-content="Join the discussion as we delve into the themes and characters of our latest read.">Monthly Book Discussion</h5>
+            <h5 data-bs-toggle="tooltip" title="Join the discussion as we delve into the themes and characters of our latest read.">Monthly Book Discussion</h5>
             <p>Date: December 1, 2024 | Time: 5:00 - 6:30 PM EST</p>
         </li>
     </ul>
@@ -246,6 +246,22 @@
     const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
     const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
 });
+</script>
+
+<script>
+    window.onload = function() {
+        document.body.classList.add('fade-in');
+    };
+</script>
+
+<script src="path/to/popper.min.js"></script>
+<script src="path/to/bootstrap.bundle.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+    });
 </script>
 
 </body>

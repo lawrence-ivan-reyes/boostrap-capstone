@@ -1,3 +1,14 @@
+.fade-in {
+    opacity: 0; 
+    animation: fadeIn 1s forwards; 
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; 
+    }
+}
+
 /* Home */
 body {
     background-image: url("/assets/background-1.jpg");
@@ -46,7 +57,7 @@ body, p, span, div, .card-text, .lead {
 }
 
 .custom-search::placeholder {
-    color: rgba(110, 109, 109, 0.798);
+    color: rgba(193, 193, 193, 0.798);
 }
 
 .custom-navbar .nav-link.active {
@@ -77,7 +88,7 @@ body, p, span, div, .card-text, .lead {
 .hero-background-img {
     position: relative;
     width: 100vw;
-    height: 80vh; 
+    height: 100vh; 
     overflow: hidden;
 }
 
@@ -109,7 +120,7 @@ body, p, span, div, .card-text, .lead {
     margin-left: auto; 
     margin-right: auto; 
     position: absolute; 
-    top: 80%;
+    top: 90%;
     left: 21.0%; 
     transform: translate(-50%, -50%); 
 }
@@ -173,6 +184,14 @@ footer {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
+#bookModal .modal-content {
+    background-color: rgba(42, 42, 42, 0.9); 
+}
+
+#bookModal .modal-backdrop {
+    opacity: 0.5; 
+}
+
 .card-title {
     font-size: 1.5rem; 
 }
@@ -191,6 +210,7 @@ footer {
     border-radius: 20px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px); 
+    text-align: left;
 }
 
 .genres-top-picks h2 {
@@ -271,6 +291,7 @@ footer {
     background: linear-gradient(to right, rgba(5, 5, 5, 0.6), rgba(34, 34, 34, 0.6));
     border-radius: 20px;
     padding: 60px 20px; 
+    text-align: left;
 }
 
 .testimonials-section h2 {
@@ -286,6 +307,7 @@ footer {
     position: relative; 
     padding: 20px; 
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    text-align: left;
 }
 
 .testimonial-card:hover {
@@ -637,11 +659,10 @@ footer {
     font-weight: bold;
 }
 
-.card-text {
+.join-card-text {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
-
 
 .modal-content {
     background-color: rgba(25, 25, 25, 0.7); 

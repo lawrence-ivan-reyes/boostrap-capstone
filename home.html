@@ -45,7 +45,7 @@
     <div class="hero-content text-left" >
         <h1 style="font-size: 3.5rem; color: #eec304;">The Online Book Club that Bridges<br>Borders and Brings Readers<br>Together.</h1>
         <p class="lead">Your Passport to a Global Community of Book Lovers, No Matter Where You Are in the World</p>
-        <a href="#" class="btn btn-light mb-4">Join the Nest</a>
+        <a href="join.html" class="btn btn-light mb-4">Join the Nest</a>
     </div>
 </div>
 
@@ -102,7 +102,7 @@
 <section class="container mt-5 genres-top-picks">
     <h2 class="text-center text-white" style="font-size: 3.5rem;">Genres & Top Picks</h2>
     <div class="d-flex justify-content-between mt-4">
-        <!-- Genre Card 1 -->
+
         <div class="genre-card">
             <div class="card text-white bg-secondary mb-3">
                 <div class="card-header">Fiction</div>
@@ -129,7 +129,7 @@
                 </div>
             </div>
         </div>
-        <!-- Genre Card 2 -->
+
         <div class="genre-card">
             <div class="card text-white bg-secondary mb-3">
                 <div class="card-header">Thriller</div>
@@ -156,7 +156,7 @@
                 </div>
             </div>
         </div>
-        <!-- Genre Card 3 -->
+
         <div class="genre-card">
             <div class="card text-white bg-secondary mb-3">
                 <div class="card-header">Sci-Fi</div>
@@ -324,6 +324,12 @@
 <script>
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+</script>
+
+<script>
+    window.onload = function() {
+        document.body.classList.add('fade-in');
+    };
 </script>
 
 </body>
