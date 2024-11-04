@@ -606,10 +606,10 @@ footer {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); 
 }
 
-.card-title {
+.why-card-title {
     color: #ffffff;
     text-align: center;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 .card-icon {
@@ -653,7 +653,7 @@ footer {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
-.card-title {
+.join-card-title {
     text-align: center;
     font-weight: bold;
 }
