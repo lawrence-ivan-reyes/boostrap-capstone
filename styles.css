@@ -18,7 +18,6 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    padding-left: 15px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -121,7 +120,7 @@ body, p, span, div, .card-text, .lead {
     margin-right: auto; 
     position: absolute; 
     top: 90%;
-    left: 21.0%; 
+    left: 20.0%; 
     transform: translate(-50%, -50%); 
 }
 
