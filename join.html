@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Nest</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/darkly/bootstrap.min.css" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-dark text-light"> 
+
+<nav class="navbar navbar-expand navbar-dark sticky-top custom-navbar"> 
+    <a class="navbar-brand" href="#">
+        <img src="/assets/booknest-logo.png" alt="BookNest Logo" width="80" height="64">
+    </a>
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" href="home.html">Home</a>
+        <a class="nav-item nav-link" href="about.html">About Us</a>
+        <a class="nav-item nav-link active" href="join.html">Join the Nest</a>
+    </div>
+    <div class="ms-auto d-flex align-items-center"> 
+        <form class="d-flex me-3" role="search">
+            <input class="form-control me-2 custom-search" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+        <a href="#" class="btn btn-outline-light">Login</a>
+    </div>
+</nav>
+
+<section class="container mt-5 join-nest-section">
+    <h2 class="text-left text-white">Why BookNest?</h2>
+    <div class="row mb-4">
+        <div class="col-md-12"> 
+            <p class="join-nest-text">Joining BookNest connects you with a community of book lovers from around the globe.<br>Share your passion for reading, participate in lively discussions, and gain access to exclusive events.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3"> 
+            <div class="card join-card">
+                <div class="card-body">
+                    <div class="card-icon"><i class="fas fa-comments"></i></div>
+                    <h5 class="card-title">Exclusive Discussions</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card join-card">
+                <div class="card-body">
+                    <div class="card-icon"><i class="fas fa-book"></i></div>
+                    <h5 class="card-title">Personalized Book Recommendations</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card join-card">
+                <div class="card-body">
+                    <div class="card-icon"><i class="fas fa-users"></i></div>
+                    <h5 class="card-title">Networking Opportunities</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card join-card">
+                <div class="card-body">
+                    <div class="card-icon"><i class="fas fa-calendar-alt"></i></div>
+                    <h5 class="card-title">Virtual Events & Book Signings</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container mt-5 join-nest-section">
+    <h2 class="text-center text-white">Join the Nest</h2>
+    <p class="join-nest-text text-center">Becoming a member is easy as 1, 2, 3 (literally):</p>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card step-card">
+                <div class="card-body">
+                    <h5 class="card-title">Step 1</h5>
+                    <p class="card-text">Create an account below.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card step-card">
+                <div class="card-body">
+                    <h5 class="card-title">Step 2</h5>
+                    <p class="card-text">Confirm your account via email.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card step-card">
+                <div class="card-body">
+                    <h5 class="card-title">Step 3</h5>
+                    <p class="card-text">Begin your next reading journey!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mt-4">
+        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#joinModal">Create Account</button>
+    </div>
+</section>
+
+    <div class="modal fade" id="joinModal" tabindex="-1" aria-labelledby="joinModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="joinModalLabel">Join BookNest</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirmPassword" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirmPassword" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="container mt-5 join-nest-section">
+    <h2 class="text-left text-white">What to Expect</h2>
+    <div class="accordion" id="howItWorksAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#howItWorks1" aria-expanded="false" aria-controls="howItWorks1">
+                    Participate in Discussions
+                </button>
+            </h2>
+            <div id="howItWorks1" class="accordion-collapse collapse" data-bs-parent="#howItWorksAccordion">
+                <div class="accordion-body">
+                    Engage with fellow readers through discussions on selected books each month. Share your thoughts and gain insights from others!
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#howItWorks2" aria-expanded="false" aria-controls="howItWorks2">
+                    Attend Virtual Events
+                </button>
+            </h2>
+            <div id="howItWorks2" class="accordion-collapse collapse" data-bs-parent="#howItWorksAccordion">
+                <div class="accordion-body">
+                    Join our monthly events where we invite authors and industry experts for engaging conversations.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#howItWorks3" aria-expanded="false" aria-controls="howItWorks3">
+                    Explore New Genres
+                </button>
+            </h2>
+            <div id="howItWorks3" class="accordion-collapse collapse" data-bs-parent="#howItWorksAccordion">
+                <div class="accordion-body">
+                    Discover new genres and authors through recommendations from other members and our curated lists.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container mt-5 join-nest-section">
+    <h2 class="text-left text-white">Upcoming Events</h2>
+    <ul class="event-list">
+        <li>
+            <h5>Book Club Meeting</h5>
+            <p>Date: November 15, 2024 | Time: 7:00 PM EST</p>
+        </li>
+        <li>
+            <h5>Author Q&A with Jane Doe</h5>
+            <p>Date: November 22, 2024 | Time: 6:00 PM EST</p>
+        </li>
+        <li>
+            <h5>Monthly Book Discussion</h5>
+            <p>Date: December 1, 2024 | Time: 5:00 PM EST</p>
+        </li>
+    </ul>
+</section>
+
+
+<footer class="footer">
+    <div class="container text-center">
+        <div class="footer-links">
+            <a href="#" class="footer-link">About Us</a>
+            <a href="#" class="footer-link">Contact</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Terms of Service</a>
+        </div>
+        <p class="mt-3">&copy; 2024 BookNest. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script>
+    const joinModal = document.getElementById('joinModal');
+    const nameInput = document.getElementById('name');
+
+    joinModal.addEventListener('shown.bs.modal', () => {
+    nameInput.focus();
+    });
+</script>
+
+</body>

@@ -552,3 +552,142 @@ footer {
     transition: max-height 0.3s ease; 
 }
 
+/* Join the Nest */
+.join-nest-section {
+    background: linear-gradient(to right, rgba(5, 5, 5, 0.6), rgba(34, 34, 34, 0.6));
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    margin-bottom: 40px;
+}
+
+.join-nest-section h2 {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.join-nest-text {
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+.join-card {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(255, 228, 78, 0.847));
+    border: none; 
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    margin: 5px;
+}
+
+.join-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); 
+}
+
+.card-title {
+    color: #ffffff;
+    text-align: center;
+    font-weight: normal;
+}
+
+.card-icon {
+    font-size: 2rem; 
+    color: #FFD700; 
+    margin-bottom: 8px; 
+}
+
+.event-list {
+    list-style-type: none;
+    padding: 0;
+    color: #ffffff;
+}
+
+.event-list li {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.join-nest-section {
+    background: linear-gradient(to right, rgba(5, 5, 5, 0.6), rgba(34, 34, 34, 0.6));
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    margin-bottom: 40px;
+}
+
+.join-nest-section h2 {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.join-nest-text {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.join-steps {
+    list-style-type: decimal;
+    padding-left: 20px; 
+    margin: 20px 0;
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-align: left; 
+}
+
+.join-steps li {
+    margin-bottom: 15px;
+}
+
+.step-card {
+    background: linear-gradient(to right, rgba(5, 5, 5, 0.6), rgba(34, 34, 34, 0.6));
+    color: #eeeeee;
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.card-text {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+.modal-content {
+    background-color: rgba(25, 25, 25, 0.7); 
+    border-radius: 20px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-title {
+    color: #efefef;
+    font-size: 1.5rem; 
+}
+
+.modal-body {
+    color: #e9e9e9; 
+}
+
+.modal-footer {
+    border-top: none;
+}
+
