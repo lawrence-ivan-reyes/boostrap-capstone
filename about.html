@@ -102,6 +102,52 @@
     </div>
 </section>
 
+<section class="timeline-section">
+    <h2 class="timeline-title">How We Got Here</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-year">2021</div>
+            <p>Our humble beginnings with a small group of passionate readers.</p>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-year">2022</div>
+            <p>Growth to a vibrant online community, welcoming readers from around the globe.</p>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-year">2023</div>
+            <p>Expanded our features, introducing new genres and book recommendations.</p>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-year">2024</div>
+            <p>Launched BookNest officially as a global network for book lovers everywhere.</p>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container text-center">
+        <div class="footer-links">
+            <a href="#" class="footer-link">About Us</a>
+            <a href="#" class="footer-link">Contact</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Terms of Service</a>
+        </div>
+        <p class="mt-3">&copy; 2024 BookNest. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener("scroll", function () {
+    const items = document.querySelectorAll(".timeline-item");
+    items.forEach((item) => {
+        const itemPosition = item.getBoundingClientRect().top;
+        if (itemPosition < window.innerHeight - 100) {
+            item.classList.add("visible");
+        }
+    });
+});
+</script>
+
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const ourStorySection = document.querySelector('.our-story-section');
