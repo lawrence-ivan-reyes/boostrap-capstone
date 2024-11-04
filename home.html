@@ -52,32 +52,60 @@
 
 <section class="container mt-5 monthly-spotlight">
     <h2 class="text-white">Monthly Spotlight</h2>
-    <div class="card text-white bg-transparent mb-3">
-        <div class="row no-gutters">
-            <div class="col-md-4">
-                <img src="/assets/denison-avenue.jpg" class="card-img" alt="Book of the Month" style="object-fit: cover; height: 100%; width: 100%;">
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title" style="font-size: 1.5rem;">Book: Denison Avenue</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Author: Christina Wong</h6>
-                    <p class="card-text">Bringing together ink artwork and fiction, Denison Avenue by Daniel Innes (illustrations) and Christina Wong (text) follows the elderly Wong Cho Sum, who, living in Toronto’s gentrifying Chinatown–Kensington Market, begins to collect bottles and cans after the sudden loss of her husband as a way to fill her days and keep grief and loneliness at bay. In her long walks around the city, Cho Sum meets new friends, confronts classism and racism, and learns how to build a life as a widow in a neighborhood that is being destroyed and rebuilt, leaving elders like her behind.</p>
-                    <p class="card-text">A poignant meditation on loss, aging, gentrification, and the barriers that Chinese Canadian seniors experience in big cities, Denison Avenue beautifully combines visual art, fiction, and the endangered Toisan dialect to create a book that is truly unforgettable.</p>
-                    <a href="https://www.goodreads.com/book/show/64995552-denison-avenue" class="btn btn-light">Learn More</a>
+    <div class="row"> 
+        <div class="col-12 col-md-12"> 
+            <div class="monthly-card text-white bg-transparent mb-3">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="/assets/denison-avenue.jpg" class="card-img" alt="Book of the Month" style="object-fit: cover; height: 100%; width: 100%;">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-size: 2rem;">Denison Avenue</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Author: Christina Wong</h6>
+                            <p class="card-text">Bringing together ink artwork and fiction, Denison Avenue by Daniel Innes (illustrations) and Christina Wong (text) follows the elderly Wong Cho Sum, who, living in Toronto’s gentrifying Chinatown–Kensington Market, begins to collect bottles and cans after the sudden loss of her husband as a way to fill her days and keep grief and loneliness at bay. In her long walks around the city, Cho Sum meets new friends, confronts classism and racism, and learns how to build a life as a widow in a neighborhood that is being destroyed and rebuilt, leaving elders like her behind.</p>
+                            <p class="card-text">A poignant meditation on loss, aging, gentrification, and the barriers that Chinese Canadian seniors experience in big cities, Denison Avenue beautifully combines visual art, fiction, and the endangered Toisan dialect to create a book that is truly unforgettable.</p>
+                            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#bookModal">
+                                More Details
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+<div class="modal fade" id="bookModal" tabindex="-1" aria-labelledby="bookModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="bookModalLabel">Denison Avenue</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Literary awards: CBC Canada Reads Nominee (2024), Andrew Carnegie Medal Nominee for Fiction (2024), Foreword INDIES Book of the Year Award Nominee for Multicultural Fiction (2023)</p>
+                <p>Format: 328 pages, Paperback</p>
+                <p>Published: May 2, 2023 by ECW Press</p>
+                <p>ISBN: 9781770417151 (ISBN10: 177041715X)</p>
+                <p>ASIN: 177041715X</p>
+                <p>Language: English</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <section class="container mt-5 genres-top-picks">
-    <h2 class="text-left text-white">Genres & Top Picks</h2>
-    <div class="row mt-4">
+    <h2 class="text-center text-white">Genres & Top Picks</h2>
+    <div class="d-flex justify-content-between mt-4">
         <!-- Genre Card 1 -->
-        <div class="col-md-4">
+        <div class="genre-card">
             <div class="card text-white bg-secondary mb-3">
                 <div class="card-header">Fiction</div>
-                <div id="fictionCarousel" class="carousel slide">
+                <div id="fictionCarousel" class="carousel slide" data-bs-ride="false">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="/assets/fiction-1.jpg" class="d-block w-100" alt="Fiction Book 1">
@@ -95,13 +123,16 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
+                <div class="card-body">
+                    <p class="card-text">Explore a wide range of fiction books that will transport you to another world.</p>
+                </div>
             </div>
         </div>
         <!-- Genre Card 2 -->
-        <div class="col-md-4">
+        <div class="genre-card">
             <div class="card text-white bg-secondary mb-3">
                 <div class="card-header">Thriller</div>
-                <div id="nonFictionCarousel" class="carousel slide">
+                <div id="thrillerCarousel" class="carousel slide" data-bs-ride="false">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="/assets/thriller-1.jpg" class="d-block w-100" alt="Thriller Book 1">
@@ -110,22 +141,25 @@
                             <img src="/assets/thriller-2.jpg" class="d-block w-100" alt="Thriller Book 2">
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#nonFictionCarousel" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#thrillerCarousel" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#nonFictionCarousel" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#thrillerCarousel" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
+                <div class="card-body">
+                    <p class="card-text">Dive into thrilling stories that keep you on the edge of your seat.</p>
+                </div>
             </div>
         </div>
         <!-- Genre Card 3 -->
-        <div class="col-md-4">
+        <div class="genre-card">
             <div class="card text-white bg-secondary mb-3">
                 <div class="card-header">Science Fiction</div>
-                <div id="sciFiCarousel" class="carousel slide">
+                <div id="sciFiCarousel" class="carousel slide" data-bs-ride="false">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="/assets/scifi-1.jpg" class="d-block w-100" alt="Sci-Fi Book 1">
@@ -142,6 +176,9 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Journey through futuristic worlds filled with adventure and innovation.</p>
                 </div>
             </div>
         </div>

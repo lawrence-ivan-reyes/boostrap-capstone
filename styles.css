@@ -9,7 +9,7 @@ body {
     padding-left: 15px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
     font-family: "Readex Pro", sans-serif; 
 }
 
@@ -110,12 +110,29 @@ footer {
 
 .monthly-spotlight {
     margin-top: 50px; 
-    margin-left: 15px;
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 80%; 
+    text-align: left; 
 }
 
 .monthly-spotlight h2 {
-    text-align: left;
     margin-bottom: 20px; 
+    text-align: center; 
+}
+
+.monthly-card {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    width: calc(100% - 0px); 
+}
+
+.monthly-card .card-body {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 10px 10px;
 }
 
 .card-title {
@@ -131,30 +148,85 @@ footer {
 }
 
 .genres-top-picks {
-    background-color: transparent !important; 
+    background: linear-gradient(to right, rgba(5, 5, 5, 0.6), rgba(34, 34, 34, 0.6));
+    padding: 60px 0; 
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px); 
+}
+
+.genres-top-picks h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.genres-top-picks .d-flex {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.genres-top-picks .genre-card {
+    flex: 1 1 30%;
+    margin: 10px;
 }
 
 .genres-top-picks .carousel-inner {
-    height: 610px; 
+    height: 520px;
+}
+
+.genres-top-picks .carousel {
+    height: 530px;
+}
+
+.carousel {
+    pointer-events: none;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    pointer-events: auto;
 }
 
 .genres-top-picks .carousel-item img {
     width: 100%;
-    height: 100%; 
-    object-fit: cover; 
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.genres-top-picks .carousel-item img:hover {
+    transform: scale(1.05);
 }
 
 .genres-top-picks .card {
-    height: 100%; 
+    background: linear-gradient(to right, rgba(5, 5, 5, 0.6), rgba(34, 34, 34, 0.6));
+    border: none;
+    border-radius: 8px;
+    height: 100%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.genres-top-picks .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .genres-top-picks .card-header {
-    background-color: transparent !important; 
-    border: none; 
+    background-color: transparent !important;
+    border: none;
+    font-size: 1.5rem;
 }
 
-body, .container, .row, .genres-top-picks {
-    background-color: transparent !important; 
+.genres-top-picks .card-body {
+    padding: 1rem;
+}
+
+.genres-top-picks .card-text {
+    font-size: 1rem;
+    color: #ccc; 
 }
 
 .tooltip {
