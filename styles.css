@@ -1,5 +1,4 @@
 /* Home */
-
 body {
     background-image: url("/assets/background-1.jpg");
     background-repeat: no-repeat;
@@ -369,7 +368,6 @@ footer {
 }
 
 /* About Us Page */
-
 .our-story-section h2 {
     text-align: center; 
     font-size: 5rem; 
@@ -595,41 +593,17 @@ footer {
 
 .card-icon {
     font-size: 2rem; 
-    color: #FFD700; 
+    color: #ffd90093; 
     margin-bottom: 8px; 
 }
 
-.event-list {
-    list-style-type: none;
-    padding: 0;
-    color: #ffffff;
-}
-
-.event-list li {
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    padding: 15px;
-    margin-bottom: 10px;
-}
-
-.join-nest-section {
+.join-section {
     background: linear-gradient(to right, rgba(5, 5, 5, 0.6), rgba(34, 34, 34, 0.6));
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     margin-bottom: 40px;
-}
-
-.join-nest-section h2 {
-    text-align: center;
-    font-size: 3.5rem;
-    margin-bottom: 20px;
-}
-
-.join-nest-text {
-    font-size: 1.2rem;
-    color: #ffffff;
 }
 
 .join-steps {
@@ -691,3 +665,40 @@ footer {
     border-top: none;
 }
 
+.event-list {
+    list-style-type: none;
+    padding: 0;
+    color: #ffffff;
+}
+
+.event-list li {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.events-section {
+    background: 
+        linear-gradient(to right, rgba(5, 5, 5, 0.6), rgba(34, 34, 34, 0.6)), 
+        url('/assets/join-the-nest-image.webp');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    margin-bottom: 40px;
+}
+
+.events-section h2 {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.events-section-text {
+    font-size: 1.2rem;
+    color: #ffffff;
+}

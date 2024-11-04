@@ -17,6 +17,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-dark text-light"> 
@@ -195,24 +197,23 @@
     </div>
 </section>
 
-<section class="container mt-5 join-nest-section">
+<section class="container mt-5 events-section">
     <h2 class="text-left text-white">Upcoming Events</h2>
     <ul class="event-list">
         <li>
-            <h5>Book Club Meeting</h5>
-            <p>Date: November 15, 2024 | Time: 7:00 PM EST</p>
+            <h5 data-bs-toggle="popover" data-bs-title="BookNest Monthly Meeting" data-bs-content="Join us for our monthly gathering where we discuss our book of the month and plan future reads.">BookNest Monthly Meeting</h5>
+            <p>Date: November 15, 2024 | Time: 7:00 - 8:00 PM EST</p>
         </li>
         <li>
-            <h5>Author Q&A with Jane Doe</h5>
-            <p>Date: November 22, 2024 | Time: 6:00 PM EST</p>
+            <h5 data-bs-toggle="popover" data-bs-title="Author Q&A with Blake Crouch" data-bs-content="Get your questions ready for the author of this month's selection!">Author Q&A with Blake Crouch</h5>
+            <p>Date: November 22, 2024 | Time: 6:00 - 7:00 PM EST</p>
         </li>
         <li>
-            <h5>Monthly Book Discussion</h5>
-            <p>Date: December 1, 2024 | Time: 5:00 PM EST</p>
+            <h5 data-bs-toggle="popover" data-bs-title="Monthly Book Discussion" data-bs-content="Join the discussion as we delve into the themes and characters of our latest read.">Monthly Book Discussion</h5>
+            <p>Date: December 1, 2024 | Time: 5:00 - 6:30 PM EST</p>
         </li>
     </ul>
 </section>
-
 
 <footer class="footer">
     <div class="container text-center">
@@ -233,6 +234,18 @@
     joinModal.addEventListener('shown.bs.modal', () => {
     nameInput.focus();
     });
+</script>
+
+<script>
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+});
 </script>
 
 </body>
