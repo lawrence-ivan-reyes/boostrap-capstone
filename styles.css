@@ -701,7 +701,7 @@ footer {
 .events-section {
     background: 
         linear-gradient(to right, rgba(5, 5, 5, 0.6), rgba(34, 34, 34, 0.6)), 
-        url('/assets/join-the-nest-image.webp');
+        url('images/join-the-nest-image.webp');
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
