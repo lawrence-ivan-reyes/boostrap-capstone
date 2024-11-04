@@ -95,8 +95,8 @@ body, p, span, div, .card-text, .lead {
     margin-left: auto; 
     margin-right: auto; 
     position: absolute; 
-    top: 79.5%;
-    left: 21.6%; 
+    top: 80%;
+    left: 21.0%; 
     transform: translate(-50%, -50%); 
 }
 
@@ -127,12 +127,36 @@ footer {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     padding: 15px;
-    width: calc(100% - 0px); 
+    width: calc(100% - 0px);
+    display: flex; 
+    flex-direction: column; 
+    height: 100%; 
+}
+
+.monthly-card .row {
+    flex: 1; 
+    display: flex; 
+}
+
+.monthly-card .col-md-4 {
+    flex: 0 0 auto; 
+}
+
+.monthly-card .col-md-8 {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
 }
 
 .monthly-card .card-body {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 0 0 10px 10px;
+}
+
+.monthly-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card-title {
@@ -229,25 +253,101 @@ footer {
     color: #ccc; 
 }
 
-.tooltip {
-    --bs-tooltip-bg: rgba(255, 255, 255, 0.8);
-    --bs-tooltip-color: #000;
-    --bs-tooltip-border-radius: 0.25rem;
-    --bs-tooltip-font-size: 0.875rem;
-    --bs-tooltip-opacity: 1;
+.testimonials-section {
+    background: linear-gradient(to right, rgba(5, 5, 5, 0.6), rgba(34, 34, 34, 0.6));
+    border-radius: 20px;
+    padding: 60px 20px; 
 }
 
-.tooltip-inner {
-    background-color: var(--bs-tooltip-bg);
-    color: var(--bs-tooltip-color);
-    border-radius: var(--bs-tooltip-border-radius);
-    opacity: var(--bs-tooltip-opacity);
+.testimonials-section h2 {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 30px;
 }
 
-.upcoming-events {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
+.testimonial-card {
+    background: linear-gradient(to right, rgba(5, 5, 5, 0.8), rgba(34, 34, 34, 0.8)); 
+    border: none; 
+    border-radius: 10px; 
+    position: relative; 
+    padding: 20px; 
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.quote {
+    font-size: 3rem;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.faq-section {
+    background: linear-gradient(to right, rgba(5, 5, 5, 0.6), rgba(34, 34, 34, 0.6));
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.faq-section h2 {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.faq-section .accordion-item {
+    margin-bottom: 0; 
+}
+
+.faq-section .accordion-button {
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    transition: background 0.3s ease;
+}
+
+.faq-section .accordion-button:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.faq-section .accordion-body {
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
+    color: #ccc; 
+    padding: 15px;
 }
 
+.footer {
+    background: linear-gradient(to right, rgba(5, 5, 5, 0.8), rgba(34, 34, 34, 0.8));
+    padding: 40px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
 
+.footer .footer-links {
+    margin-bottom: 15px;
+}
+
+.footer .footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.footer .footer-link:hover {
+    color: #eec304; 
+}
+
+.footer p {
+    color: #ccc; 
+    margin: 0;
+}
