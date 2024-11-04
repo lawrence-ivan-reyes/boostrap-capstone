@@ -21,22 +21,29 @@
 </head>
 <body class="bg-dark text-light"> 
 
-<nav class="navbar navbar-expand navbar-dark"> 
+<nav class="navbar navbar-expand navbar-dark sticky-top custom-navbar"> 
     <a class="navbar-brand" href="#">
         <img src="/assets/booknest-logo.png" alt="BookNest Logo" width="80" height="64">
     </a>
     <div class="navbar-nav">
         <a class="nav-item nav-link active" href="#">Home</a>
-        <a class="nav-item nav-link" href="#">Library</a>
+        <a class="nav-item nav-link" href="#">How It Works</a>
         <a class="nav-item nav-link" href="#">Membership</a>
     </div>
+    <div class="ms-auto d-flex align-items-center"> 
+        <form class="d-flex me-3" role="search">
+            <input class="form-control me-2 custom-search" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+        <a href="#" class="btn btn-outline-light">Login</a>
+    </div>
 </nav>
-      
+    
 <div class="hero-background-img">
     <img src="/assets/hero-image.png" alt="Books" class="img-fluid">
     <div class="hero-content text-left">
-        <h1>BookNest: The Online Book Club that<br>Bridges Borders and Brings Readers<br>Together.</h1>
-        <p class="lead">Your Passport to a Global Community of Book Lovers, No Matter Where You Are</p>
+        <h1>The Online Book Club that Bridges<br>Borders and Brings Readers<br>Together.</h1>
+        <p class="lead">Your Passport to a Global Community of Book Lovers, No Matter Where You Are in the World</p>
         <a href="#" class="btn btn-light mb-4">Join the Nest</a>
     </div>
 </div>
@@ -148,15 +155,15 @@
             <div class="card text-white bg-secondary mb-3">
                 <div class="card-body">
                     <p class="card-text">"Being part of this BookNest has transformed my reading experience!"</p>
-                    <p class="card-text" data-bs-toggle="tooltip" title="Favorite Genre: Science Fiction" style="white-space: nowrap;">- Harry Potter</p>
+                    <p class="card-text" data-bs-toggle="tooltip" title="Favourite Genre: Science Fiction" style="white-space: nowrap;">- Harry Potter</p>
                 </div>
             </div>
         </div>
         <div class="col-md-4">
             <div class="card text-white bg-secondary mb-3">
                 <div class="card-body">
-                    <p class="card-text">"I've met so many amazing people through this BookNest!"</p>
-                    <p class="card-text" data-bs-toggle="tooltip" title="Favorite Genre: Fiction" style="white-space: nowrap;">- Hermione Granger</p>
+                    <p class="card-text">"I've met so many amazing people through BookNest!"</p>
+                    <p class="card-text" data-bs-toggle="tooltip" title="Favourite Genre: Fiction" style="white-space: nowrap;">- Hermione Granger</p>
                 </div>
             </div>
         </div>
@@ -164,7 +171,7 @@
             <div class="card text-white bg-secondary mb-3">
                 <div class="card-body">
                     <p class="card-text">"The discussions we have at BookNest are enlightening and inspiring!"</p>
-                    <p class="card-text" data-bs-toggle="tooltip" title="Favorite Genre: Thriller" style="white-space: nowrap;">- Ron Weasley</p>
+                    <p class="card-text" data-bs-toggle="tooltip" title="Favourite Genre: Thriller" style="white-space: nowrap;">- Ron Weasley</p>
                 </div>
             </div>
         </div>
