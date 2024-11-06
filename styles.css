@@ -97,7 +97,7 @@ body, p, span, div, .card-text, .lead {
 
 .hero-content {
     position: absolute;
-    top: 40%;
+    top: 28%;
     left: 0;
     transform: translateY(-50%);
     text-align: left;
