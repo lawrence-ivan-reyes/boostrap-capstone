@@ -258,4 +258,24 @@
     });
 </script>
 
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const joinSections = document.querySelectorAll('.join-nest-section');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target); 
+            }
+        });
+    });
+
+    joinSections.forEach(section => {
+        observer.observe(section);
+    });
+});
+
+</script>
+
 </body>

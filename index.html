@@ -334,23 +334,6 @@
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 </script>
 
-<!-- <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const heroEffect = document.querySelector('.hero-effect');
-
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    heroEffect.classList.add('visible');
-                    observer.unobserve(entry.target);
-                }
-            });
-        });
-
-        observer.observe(heroEffect);
-    });
-</script> -->
-
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const elementsToAnimate = document.querySelectorAll('.hero-effect, .small-image');
