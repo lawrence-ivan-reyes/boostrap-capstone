@@ -193,18 +193,6 @@
 </footer>
 
 <script>
-    document.addEventListener("scroll", function () {
-    const items = document.querySelectorAll(".timeline-item");
-    items.forEach((item) => {
-        const itemPosition = item.getBoundingClientRect().top;
-        if (itemPosition < window.innerHeight - 100) {
-            item.classList.add("visible");
-        }
-    });
-});
-</script>
-
-<script>
     document.addEventListener('DOMContentLoaded', function() {
         const ourStorySection = document.querySelector('.our-story-section');
 

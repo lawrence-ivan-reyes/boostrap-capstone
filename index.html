@@ -39,7 +39,7 @@
     </div>
 </nav>
     
-<div class="hero-background-img">
+<div class="hero-background-img hero-effect">
     <img src="images/hero-image.png" alt="Books" class="img-fluid">
     <div class="hero-content text-left" >
         <h1 style="font-size: 3.5rem; color: #eec304;">The Online Book Club that Bridges<br>Borders and Brings Readers<br>Together.</h1>
@@ -325,11 +325,40 @@
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 </script>
 
+<!-- <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const heroEffect = document.querySelector('.hero-effect');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    heroEffect.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        observer.observe(heroEffect);
+    });
+</script> -->
+
 <script>
-    window.onload = function() {
-        document.body.classList.add('fade-in');
-    };
+    document.addEventListener('DOMContentLoaded', function() {
+        const elementsToAnimate = document.querySelectorAll('.hero-effect, .small-image');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        elementsToAnimate.forEach(element => observer.observe(element));
+    });
 </script>
+
 
 </body>
 </html>
