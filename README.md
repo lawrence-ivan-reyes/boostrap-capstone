@@ -23,7 +23,7 @@
 
 ---
 
-### Key Bootstrap Components Implemented
+### 🔐 Key Bootstrap Components Implemented
 *   **Navbar:**  Sticky top navbar for easy navigation.
 *   **Grid System:**  Used to create responsive layouts.
 *   **Cards:**  Display information about books, genres, and testimonials.
@@ -34,7 +34,7 @@
 
 ---
 
-### Technologies Used 💻
+### 💻 Technologies Used
 *   **HTML5**
 *   **CSS**
 *   **Bootstrap 5**
@@ -43,7 +43,7 @@
 
 ---
 
-### Project Structure 📁
+### 📁 Project Structure 
 *   `index.html`: Home Page
 *   `about.html`: About Us Page
 *   `join.html`: Join the Nest Page
